@@ -89,7 +89,8 @@ spec:
       name: Import, Edit and Push
       action: ubility:import:repo
       input:
-        repo_url: ${{ (parameters.repoUrl | parseRepoUrl).repo }}
+        repo_owner: ${{ (parameters.repoUrl | parseRepoUrl).owner }}
+        repo_name: ${{ (parameters.repoUrl | parseRepoUrl).repo }}
 
     # - id: createJenkinsPipeline
     #   name: Create Jenkins Pipeline
