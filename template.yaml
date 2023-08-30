@@ -1,16 +1,14 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: create-flask-rest-api-template
-  title: Create Flask Rest API
-  description: Create a starting flask rest API project
+  name: import-service-template
+  title: Import Service
+  description: Import a built service into OpenOps and deploy it to a cluster
   tags:
-    - python
-    - api
-    - flask
+    - docker
 spec:
   owner: ibrahimnasri24@gmail.com
-  type: website
+  type: service
   parameters:
     - title: Project Info
       required:
