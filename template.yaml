@@ -91,19 +91,19 @@ spec:
       input:
         repo_url: ${{ (parameters.repoUrl | parseRepoUrl).repo }}
 
-    - id: createJenkinsPipeline
-      name: Create Jenkins Pipeline
-      action: ubility:add:jenkins
-      input:
-        project_name: ${{ parameters.project_name }}
+    # - id: createJenkinsPipeline
+    #   name: Create Jenkins Pipeline
+    #   action: ubility:add:jenkins
+    #   input:
+    #     project_name: ${{ parameters.project_name }}
 
-    - id: register
-      name: Register
-      action: catalog:register
-      input:
-        repoContentsUrl: ${{ steps.publish.output.repoContentsUrl }}
-        catalogInfoPath: "/catalog-info.yaml"
-        optional: true
+    # - id: register
+    #   name: Register
+    #   action: catalog:register
+    #   input:
+    #     repoContentsUrl: ${{ steps.publish.output.repoContentsUrl }}
+    #     catalogInfoPath: "/catalog-info.yaml"
+    #     optional: true
 
   output:
     links:
