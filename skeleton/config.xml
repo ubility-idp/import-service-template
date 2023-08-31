@@ -16,7 +16,7 @@
   <keepDependencies>false</keepDependencies>
   <properties>
     <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.37.0">
-      <projectUrl>https://github.com/${{ values.repo_owner }}/${{ values.repo_location | replace(' ','-') }}.git/</projectUrl>
+      <projectUrl>https://github.com/${{ values.repo_owner }}/${{ values.repo_location }}.git/</projectUrl>
       <displayName />
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
     <hudson.model.ParametersDefinitionProperty>
@@ -41,7 +41,7 @@
       <configVersion>2</configVersion>
       <userRemoteConfigs>
         <hudson.plugins.git.UserRemoteConfig>
-          <url>git@github.com:${{ values.repo_owner }}/${{ values.repo_location | replace(' ','-') }}.git</url>
+          <url>git@github.com:${{ values.repo_owner }}/${{ values.repo_location }}.git</url>
           <credentialsId>${{ values.repo_owner }}-githubssh</credentialsId>
         </hudson.plugins.git.UserRemoteConfig>
       </userRemoteConfigs>
