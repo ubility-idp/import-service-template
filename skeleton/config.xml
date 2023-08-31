@@ -28,7 +28,7 @@
           <type>PT_REVISION</type>
           <tagFilter>*</tagFilter>
           <branchFilter>.*</branchFilter>
-          <defaultValue>master</defaultValue>
+          <defaultValue>main</defaultValue>
           <listSize>5</listSize>
           <requiredParameter>false</requiredParameter>
         </net.uaznia.lukanus.hudson.plugins.gitparameter.GitParameterDefinition>
@@ -47,7 +47,7 @@
       </userRemoteConfigs>
       <branches>
         <hudson.plugins.git.BranchSpec>
-          <name>master</name>
+          <name>main</name>
         </hudson.plugins.git.BranchSpec>
       </branches>
       <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
