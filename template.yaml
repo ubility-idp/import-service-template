@@ -112,4 +112,4 @@ spec:
         url: ${{ steps.publish.output.remoteUrl }}
       - title: Open in catalog
         icon: catalog
-        entityRef: https://${{ (parameters.repoUrl | parseRepoUrl).owner }}/${{ (parameters.repoUrl | parseRepoUrl).repo }}.git
+        entityRef: https://github.com/${{ (parameters.repoUrl | parseRepoUrl).owner }}/${{ (parameters.repoUrl | parseRepoUrl).repo }}.git
